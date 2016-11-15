@@ -1,0 +1,7 @@
+<article class="video">
+    <video controls src="{intro-video}"></video>
+    <canvas width="1920" height="1080" class="inactive"></canvas>
+    <figure class="canvas-background"></figure>
+    <button data-action="show-navigation"><img src="images/ui/menu.png"></button>
+    <a href="#" class="logo-link"><img src="images/ui/logo.png"></a>
+</article>

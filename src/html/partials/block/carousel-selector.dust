@@ -1,0 +1,11 @@
+<article class="carousel-selector">
+    {#videos}
+        <a href="" data-action="select-video" data-video="{$idx}">
+            <img src="{icon}" />
+            <section class="meta">
+                <h1>{title}</h1>
+                <p>{category}</p>
+            </section>
+        </a>
+    {/videos}
+</article>

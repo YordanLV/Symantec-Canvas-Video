@@ -1,0 +1,169 @@
+article.video {
+    .header-text{
+        z-index: 1;
+        text-align: center;
+        font-size: 2em;
+        color: #FFFFFF;
+        padding: 3.5em 1em;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+
+    @mixin main() {
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+
+        > * {
+            user-select: none;
+        }
+
+        > video {
+            position: absolute;
+            z-index: -1;
+            top: 0; bottom: 0;
+            left: 0; right: 0;
+            width: 100%; height: 100%;
+            z-index: 1;
+        }
+
+        > canvas {
+            position: absolute;
+            top: 0; bottom: 0;
+            left: 0; right: 0;
+            width: 100%; height: 100%;
+            z-index: 3;
+
+            & + figure.canvas-background {
+                position: absolute;
+                top: 0; bottom: 0;
+                left: 0; right: 0;
+                width: 100%; height: 100%;
+                z-index: 2;
+
+                background-image: radial-gradient(ellipse at 50% 70%, #0e79aa, #263067);
+                pointer-events: none;
+            }
+
+            &:not(.inactive) {
+                pointer-events: auto;
+                opacity: 1;
+            }
+            &.inactive {
+                pointer-events: none;
+                opacity: 0;
+            }
+
+            &.solid-background {
+                transition: opacity 0.8s;
+
+                & + figure.canvas-background {
+                    opacity: 1;
+                    transition: opacity 0.4s;
+                }
+
+                &.inactive {
+                    transition: opacity 0.4s;
+
+                    & + figure.canvas-background {
+                        opacity: 0;
+                        transition: opacity 0.8s;
+                    }
+                }
+            }
+            &:not(.solid-background) {
+                transition:
+                    opacity 0.4s,
+                    transform 0.6s;
+
+                & + figure.canvas-background {
+                    opacity: 0.8;
+                    transition: opacity 0.6s;
+                }
+
+                &.inactive {
+                    transform: translateY(-100%);
+
+                    transition:
+                        opacity 0.4s 0.3s,
+                        transform 0.6s 0.3s;
+
+                    & + figure.canvas-background {
+                        opacity: 0;
+                        transition: opacity 0.6s;
+                    }
+                }
+            }
+        }
+
+        > button[data-action="show-navigation"] {
+            background: transparent;
+            position: absolute;
+            z-index: 3;
+            top: 6.2%;
+            right: 3.2%;
+            width: 7.0%;
+            height: auto;
+            opacity: 1;
+
+            appearance: none;
+            outline: none;
+            border: none;
+            cursor: pointer;
+
+            font-size: 2em;
+
+            > img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        > .logo-link {
+            position: absolute;
+            z-index: 3;
+            padding: 0.5em;
+            color: #fff;
+            text-decoration: none;
+            font-size: 2em;
+            top: 5.4%;
+            left: 3.5%;
+            width: 26%;
+            height: auto;
+
+            > img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    @mixin layout() {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        @media screen and (min-aspect-ratio: #{$aspect-ratio-string}) {
+            width: 100vh * $aspect-ratio; height: 100vh;
+            font-size: (16 / $video-height) * 100vh;
+        }
+        @media screen and (max-aspect-ratio: #{$aspect-ratio-string}) {
+            width: 100vw; height: 100vw / $aspect-ratio;
+            font-size: (16 / $video-width) * 100vw;
+        }
+
+        transform: translate(-50%, -50%);
+    }
+
+    @mixin color() { }
+
+    @include main;
+    @include color;
+
+    @media #{$media-normal} { @include layout(); }
+    @media #{$media-small} { @include layout(); }
+    @media #{$media-minimum} { @include layout(); }
+}

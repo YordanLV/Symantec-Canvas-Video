@@ -1,0 +1,85 @@
+{
+    "region": "de",
+    "title": "DE Prototype",
+    "intro-video": "https://s3.eu-central-1.amazonaws.com/16299-symantec-cws-video/de/introduction.mp4",
+    "videos": [
+        {
+            "title": "Schwachstellenanalyse",
+            "category": "Sicherheit",
+            "icon": "images/Vulnerability-Assessment.png",
+            "video": { "mp4": "https://s3.eu-central-1.amazonaws.com/16299-symantec-cws-video/de/vulnerability-assessment.mp4" }
+        },
+        {
+            "title": "Malware-Scan",
+            "category": "Sicherheit",
+            "icon": "images/Malware-Scanning.png",
+            "video": { "mp4": "https://s3.eu-central-1.amazonaws.com/16299-symantec-cws-video/de/malware-scanning.mp4" }
+        },
+        {
+            "title": "SSL/TLS-Zertifikate mit Extended Validation",
+            "category": "Sicherheit",
+            "icon": "images/Extended-Validation-SSL-TLS.png",
+            "video": { "mp4": "https://s3.eu-central-1.amazonaws.com/16299-symantec-cws-video/de/extended-validation.mp4" }
+        },
+        {
+            "title": "DDoS-Schutz",
+            "category": "Sicherheit",
+            "icon": "images/DDoS.png",
+            "video": { "mp4": "https://s3.eu-central-1.amazonaws.com/16299-symantec-cws-video/de/ddos-protection.mp4" }
+        },
+        {
+            "title": "Web Application Firewall",
+            "category": "Sicherheit",
+            "icon": "images/WAF.png",
+            "video": { "mp4": "https://s3.eu-central-1.amazonaws.com/16299-symantec-cws-video/de/website-application-firewall.mp4" }
+        },
+        {
+            "title": "Secure App Service",
+            "category": "Sicherheit",
+            "icon": "images/SAS.png",
+            "video": { "mp4": "https://s3.eu-central-1.amazonaws.com/16299-symantec-cws-video/de/secure-app-service.mp4" }
+        },
+        {
+            "title": "Zertifikatsuche",
+            "category": "Management",
+            "icon": "images/Discovery-and-Automation.png",
+            "video": { "mp4": "https://s3.eu-central-1.amazonaws.com/16299-symantec-cws-video/de/discovery-and-automation.mp4" }
+        },
+        {
+            "title": "Private Zertifizierungsstelle",
+            "category": "Management",
+            "icon": "images/Private-CA.png",
+            "video": { "mp4": "https://s3.eu-central-1.amazonaws.com/16299-symantec-cws-video/de/private-ca.mp4" }
+        },
+        {
+            "title": "Support rund um die Uhr",
+            "category": "Management",
+            "icon": "images/24hr-Support.png",
+            "video": { "mp4": "https://s3.eu-central-1.amazonaws.com/16299-symantec-cws-video/de/24hr-support.mp4" }
+        },
+        {
+            "title": "CDN und Optimization",
+            "category": "Leistung",
+            "icon": "images/CDN.png",
+            "video": { "mp4": "https://s3.eu-central-1.amazonaws.com/16299-symantec-cws-video/de/cdn-optimization.mp4" }
+        },
+        {
+            "title": "Elliptische-Kurven-Kryptografie",
+            "category": "Leistung",
+            "icon": "images/ECC.png",
+            "video": { "mp4": "https://s3.eu-central-1.amazonaws.com/16299-symantec-cws-video/de/elliptic-curve-cryptography.mp4" }
+        },
+        {
+            "title": "Das Norton Secured-Siegel",
+            "category": "Leistung",
+            "icon": "images/Norton-Seal.png",
+            "video": { "mp4": "https://s3.eu-central-1.amazonaws.com/16299-symantec-cws-video/de/norton-secured-seal.mp4" }
+        },
+        {
+            "title": "Seal-in-Search",
+            "category": "Leistung",
+            "icon": "images/Seal-in-Search.png",
+            "video": { "mp4": "https://s3.eu-central-1.amazonaws.com/16299-symantec-cws-video/de/seal-in-search.mp4" }
+        }
+    ]
+}

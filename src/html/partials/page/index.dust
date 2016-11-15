@@ -1,0 +1,6 @@
+{> structure /}
+
+{<content}
+    {> "block/video" /}
+    {> "block/carousel-selector" /}
+{/content}

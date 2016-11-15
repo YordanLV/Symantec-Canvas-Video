@@ -1,0 +1,85 @@
+{
+    "region": "fr",
+    "title": "FR Prototype",
+    "intro-video": "https://s3.eu-central-1.amazonaws.com/16299-symantec-cws-video/fr/introduction.mp4",
+    "videos": [
+        {
+            "title": "DÉTECTION DES VULNÉRABILITÉS",
+            "category": "Sécurité",
+            "icon": "images/Vulnerability-Assessment.png",
+            "video": { "mp4": "https://s3.eu-central-1.amazonaws.com/16299-symantec-cws-video/fr/vulnerability-assessment.mp4" }
+        },
+        {
+            "title": "ANALYSE ANTI-MALWARE",
+            "category": "Sécurité",
+            "icon": "images/Malware-Scanning.png",
+            "video": { "mp4": "https://s3.eu-central-1.amazonaws.com/16299-symantec-cws-video/fr/malware-scanning.mp4" }
+        },
+        {
+            "title": "CERTIFICATS SSL/TLS EXTENDED VALIDATION",
+            "category": "Sécurité",
+            "icon": "images/Extended-Validation-SSL-TLS.png",
+            "video": { "mp4": "https://s3.eu-central-1.amazonaws.com/16299-symantec-cws-video/fr/extended-validation.mp4" }
+        },
+        {
+            "title": "PROTECTION ANTI-DDOS",
+            "category": "Sécurité",
+            "icon": "images/DDoS.png",
+            "video": { "mp4": "https://s3.eu-central-1.amazonaws.com/16299-symantec-cws-video/fr/ddos-protection.mp4" }
+        },
+        {
+            "title": "PARE-FEU D’APPLICATIONS WEB",
+            "category": "Sécurité",
+            "icon": "images/WAF.png",
+            "video": { "mp4": "https://s3.eu-central-1.amazonaws.com/16299-symantec-cws-video/fr/website-application-firewall.mp4" }
+        },
+        {
+            "title": "SECURE APP SERVICE",
+            "category": "Sécurité",
+            "icon": "images/SAS.png",
+            "video": { "mp4": "https://s3.eu-central-1.amazonaws.com/16299-symantec-cws-video/fr/secure-app-service.mp4" }
+        },
+        {
+            "title": "RECHERCHE",
+            "category": "Management",
+            "icon": "images/Discovery-and-Automation.png",
+            "video": { "mp4": "https://s3.eu-central-1.amazonaws.com/16299-symantec-cws-video/fr/discovery-and-automation.mp4" }
+        },
+        {
+            "title": "PRIVATE CA",
+            "category": "Management",
+            "icon": "images/Private-CA.png",
+            "video": { "mp4": "https://s3.eu-central-1.amazonaws.com/16299-symantec-cws-video/fr/private-ca.mp4" }
+        },
+        {
+            "title": "ASSISTANCE 24H/24",
+            "category": "Management",
+            "icon": "images/24hr-Support.png",
+            "video": { "mp4": "https://s3.eu-central-1.amazonaws.com/16299-symantec-cws-video/fr/24hr-support.mp4" }
+        },
+        {
+            "title": "CDN ET OPTIMISATION",
+            "category": "Performances",
+            "icon": "images/CDN.png",
+            "video": { "mp4": "https://s3.eu-central-1.amazonaws.com/16299-symantec-cws-video/fr/cdn-optimization.mp4" }
+        },
+        {
+            "title": "CRYPTOGRAPHIE PAR COURBES ELLIPTIQUES (ECC)",
+            "category": "Performances",
+            "icon": "images/ECC.png",
+            "video": { "mp4": "https://s3.eu-central-1.amazonaws.com/16299-symantec-cws-video/fr/elliptic-curve-cryptography.mp4" }
+        },
+        {
+            "title": "SCEAU NORTON SECURED",
+            "category": "Performances",
+            "icon": "images/Norton-Seal.png",
+            "video": { "mp4": "https://s3.eu-central-1.amazonaws.com/16299-symantec-cws-video/fr/norton-secured-seal.mp4" }
+        },
+        {
+            "title": "SEAL-IN-SEARCH",
+            "category": "Performances",
+            "icon": "images/Seal-in-Search.png",
+            "video": { "mp4": "https://s3.eu-central-1.amazonaws.com/16299-symantec-cws-video/fr/seal-in-search.mp4" }
+        }
+    ]
+}

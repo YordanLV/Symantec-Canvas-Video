@@ -1,0 +1,60 @@
+article.carousel-selector {
+    @mixin main() {
+        overflow-x: scroll;
+        white-space: nowrap;
+        font-size: 0;
+
+        > a {
+            display: inline-block;
+            padding: 1rem;
+
+            font-size: 1rem;
+            text-decoration: none;
+            background-color: #1b4e80;
+
+            @include clear;
+
+            > section.meta {
+                display: inline-block;
+
+                vertical-align: middle;
+
+                > h1 {
+                    display: block;
+
+                    color: #fbc22d;
+                }
+
+                > p {
+                    display: inline-block;
+
+                    color: #466fd3;
+                }
+            }
+
+            > img {
+                display: inline-block;
+                width: auto;
+                height: 4rem;
+                margin-right: 1rem;
+
+                vertical-align: middle;
+            }
+        }
+    }
+
+    @mixin layout() {
+        position: absolute;
+        top: 50%;
+        left: 0; right: 0;
+        width: 100vw;
+
+        transform: translateY(#{100vw / $aspect-ratio / 2});
+    }
+
+    @include main;
+
+    @media #{$media-normal} { @include layout(); }
+    @media #{$media-small} { @include layout(); }
+    @media #{$media-minimum} { @include layout(); }
+}

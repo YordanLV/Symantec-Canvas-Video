@@ -1,0 +1,13 @@
+body > header {
+    @mixin main() { }
+
+    @mixin layout() { }
+
+    @mixin color() { }
+
+    @include main;
+
+    @media #{$media-normal} { @include layout(); }
+    @media #{$media-small} { @include layout(); }
+    @media #{$media-minimum} { @include layout(); }
+}
